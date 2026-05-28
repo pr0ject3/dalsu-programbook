@@ -14,17 +14,26 @@
       overflow: hidden;
     }
 
-    .container {
-      position: relative;
-      width: 100vw;
-      height: 100vh;
-    }
+.stage {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: black;
+}
 
-    .bg {
-      width: 100%;
-      height: 100%;
-      object-fit: contain;
-    }
+.screen {
+  position: relative;
+  width: auto;
+  height: 100vh;
+}
+
+.bg {
+  height: 100%;
+  width: auto;
+  display: block;
+}
 
     .button {
       position: absolute;
@@ -50,7 +59,8 @@
 
 <body>
 
-<div class="container">
+<div class="stage">
+  <div class="screen">
 
   <img src="human_android.png" class="bg">
 
@@ -58,6 +68,7 @@
 
   <a href="android.html" class="button android"></a>
 
+  </div>
 </div>
 
 </body>
