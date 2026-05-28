@@ -13,37 +13,53 @@
       overflow: hidden;
     }
 
-    .container {
-      position: relative;
-      width: 100vw;
-      height: 100vh;
-    }
+.stage {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: black;
+  overflow: hidden;
+}
 
-    .bg {
-      width: 100%;
-      height: 100%;
-      object-fit: contain;
-    }
+.screen {
+  position: relative;
+  display: inline-block;
+  line-height: 0;
+  height: 100vh;
+}
 
-    .button {
-      position: absolute;
-    }
+.bg {
+  height: 100vh;
+  width: auto;
+  display: block;
+}
+
+.button {
+  position: absolute;
+  background: red;
+  opacity: 0.5;
+  z-index: 10;
+}
 
     .archive {
-      left: 40%;
+      left: 10%;
       top: 79%;
-      width: 20%;
+      width: 70%;
       height: 8%;
     }
   </style>
 </head>
 
 <body>
-  <div class="container">
+<div class="stage">
+  <div class="screen">
     <img src="leave emotion.png" class="bg">
 
     <a href="android.html" class="button back"></a>
     <a href="archive_main.html" class="button archive"></a>
   </div>
+</div>
 </body>
 </html>
