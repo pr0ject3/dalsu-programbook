@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>구역 정보</title>
+
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: black;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+    }
+
+    .stage {
+      width: 100vw;
+      height: 100dvh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: black;
+      overflow: hidden;
+    }
+
+    .screen {
+      position: relative;
+      width: min(100vw, 56.25dvh);
+      height: min(177.777vw, 100dvh);
+    }
+
+    .bg {
+      width: 100%;
+      height: 100%;
+      display: block;
+    }
+
+    .button {
+      position: absolute;
+      background: red;
+      opacity: 0.5;
+      z-index: 10;
+    }
+
+    .back {
+      left: 3%;
+      top: 1.5%;
+      width: 26%;
+      height: 5.5%;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="stage">
+    <div class="screen">
+      <img src="zone_info.png" class="bg">
+
+      <a href="archive_main.html" class="button back"></a>
+    </div>
+  </div>
+</body>
+</html>
