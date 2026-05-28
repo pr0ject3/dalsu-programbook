@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>바이러스 확인 절차</title>
+  <title>바이러스 확인 절차test</title>
 
   <style>
     html, body {
@@ -13,17 +13,18 @@
       overflow: hidden;
     }
 
-    .container {
-      position: relative;
-      width: 100vw;
-      height: 100vh;
-    }
+.screen {
+  position: relative;
+  display: inline-block;
+  line-height: 0;
+  height: 100vh;
+}
 
-    .bg {
-      width: 100%;
-      height: 100%;
-      object-fit: contain;
-    }
+.bg {
+  height: 100vh;
+  width: auto;
+  display: block;
+}
 
     .button {
       position: absolute;
@@ -53,7 +54,8 @@
 </head>
 
 <body>
-  <div class="container">
+<div class="stage">
+  <div class="screen">
     <img src="virus.png" class="bg">
 
     <a href="human.html" class="button back"></a>
@@ -61,5 +63,6 @@
     <a href="virus_no.html" class="button clean"></a>
 
   </div>
+</div>
 </body>
 </html>
