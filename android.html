@@ -13,52 +13,68 @@
       overflow: hidden;
     }
 
-    .container {
-      position: relative;
-      width: 100vw;
-      height: 100vh;
-    }
+.stage {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: black;
+  overflow: hidden;
+}
 
-    .bg {
-      width: 100%;
-      height: 100%;
-      object-fit: contain;
-    }
+.screen {
+  position: relative;
+  display: inline-block;
+  line-height: 0;
+  height: 100vh;
+}
 
-    .button {
-      position: absolute;
-    }
+.bg {
+  height: 100vh;
+  width: auto;
+  display: block;
+}
+
+.button {
+  position: absolute;
+  background: red;
+  opacity: 0.5;
+  z-index: 10;
+}
 
     .back {
-      left: 40%;
+      left: 10%;
       top: 42%;
-      width: 7%;
+      width: 28%;
       height: 5%;
     }
 
     .possible {
-      left: 41%;
+      left: 10%;
       top: 71%;
-      width: 20%;
+      width: 78%;
       height: 7%;
     }
 
     .impossible {
-      left: 41%;
+      left: 10%;
       top: 80%;
-      width: 20%;
+      width: 78%;
       height: 7%;
     }
   </style>
 </head>
 
 <body>
-  <div class="container">
+<div class="stage">
+  <div class="screen">
     <img src="emotion.png" class="bg">
 
     <a href="index.html" class="button back"></a>
     <a href="android_possible.html" class="button possible"></a>
     <a href="android_impossible.html" class="button impossible"></a>
   </div>
+</div>
 </body>
 </html>
