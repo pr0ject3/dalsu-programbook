@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>판매 불가</title>
+
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: black;
+      overflow: hidden;
+    }
+
+    .container {
+      position: relative;
+      width: 100vw;
+      height: 100vh;
+    }
+
+    .bg {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+
+    .button {
+      position: absolute;
+    }
+
+    .archive {
+      left: 40%;
+      top: 77%;
+      width: 20%;
+      height: 8%;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <img src="denied_sell.png" class="bg">
+
+    <a href="sell.html" class="button back"></a>
+    <a href="archive_main.html" class="button archive"></a>
+  </div>
+</body>
+</html>

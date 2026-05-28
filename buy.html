@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>바이러스 확인 절차</title>
+
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: black;
+      overflow: hidden;
+    }
+
+    .container {
+      position: relative;
+      width: 100vw;
+      height: 100vh;
+    }
+
+    .bg {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+
+    .button {
+      position: absolute;
+    }
+
+    .back {
+      left: 40%;
+      top: 44%;
+      width: 7%;
+      height: 5%;
+    }
+
+    .infected {
+      left: 41%;
+      top: 71%;
+      width: 20%;
+      height: 7%;
+    }
+
+    .clean {
+      left: 41%;
+      top: 80%;
+      width: 20%;
+      height: 7%;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <img src="virus.png" class="bg">
+
+    <a href="human.html" class="button back"></a>
+    <a href="virus_yes.html" class="button infected"></a>
+    <a href="virus_no.html" class="button clean"></a>
+
+  </div>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>감독 위원회</title>
+
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: black;
+      overflow: hidden;
+    }
+
+    .container {
+      position: relative;
+      width: 100vw;
+      height: 100vh;
+    }
+
+    .bg {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+
+    .button {
+      position: absolute;
+    }
+
+    /* 뒤로가기 */
+    .back {
+      left: 38%;
+      top: 4%;
+      width: 9%;
+      height: 8%;
+    }
+
+    /* 오타 덮개 */
+    .cover {
+      position: absolute;
+      left: 39%;
+      top: 27.8%;
+      width: 16%;
+      height: 3%;
+      background: rgba(18, 15, 11, 0.95);
+    }
+
+    /* 수정 문구 */
+    .fixed-text {
+      position: absolute;
+      left: 39.6%;
+      top: 28.6%;
+      width: 30%;
+      color: #9f9277;
+      font-size: 20px;
+      line-height: 1.5;
+      letter-spacing: -0.5px;
+      font-family: sans-serif;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <img src="committee.png" class="bg">
+
+    <div class="cover"></div>
+    <div class="fixed-text">
+      구역 운영 및 정보 통제 승인 권한 보유.
+    </div>
+
+    <a href="restricted.html" class="button back"></a>
+  </div>
+</body>
+</html>

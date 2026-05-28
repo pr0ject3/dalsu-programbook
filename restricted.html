@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>열람제한</title>
+
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: black;
+      overflow: hidden;
+    }
+
+    .container {
+      position: relative;
+      width: 100vw;
+      height: 100vh;
+    }
+
+    .bg {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+
+    .button {
+      position: absolute;
+    }
+
+    .back {
+      left: 38%;
+      top: 4%;
+      width: 9%;
+      height: 8%;
+    }
+
+    .committee {
+      left: 39%;
+      top: 43%;
+      width: 22%;
+      height: 8%;
+    }
+
+    .field {
+      left: 39%;
+      top: 55%;
+      width: 22%;
+      height: 8%;
+    }
+
+    .system {
+      left: 39%;
+      top: 66%;
+      width: 22%;
+      height: 8%;
+    }
+
+    .info {
+      left: 39%;
+      top: 78%;
+      width: 22%;
+      height: 8%;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <img src="restricted.png" class="bg">
+
+    <a href="object_list.html" class="button back"></a>
+    <a href="committee.html" class="button committee"></a>
+    <a href="field_control.html" class="button field"></a>
+    <a href="system_management.html" class="button system"></a>
+    <a href="information_bureau.html" class="button info"></a>
+  </div>
+</body>
+</html>

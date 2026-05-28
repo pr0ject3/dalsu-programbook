@@ -1,0 +1,65 @@
+```html
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>질문 1</title>
+
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: black;
+      overflow: hidden;
+    }
+
+    .container {
+      position: relative;
+      width: 100vw;
+      height: 100vh;
+    }
+
+    .bg {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+
+    .button {
+      position: absolute;
+    }
+
+    /* 인간 버튼 */
+    .human {
+      left: 40%;
+      top: 75%;
+      width: 20%;
+      height: 7%;
+    }
+
+    /* 안드로이드 버튼 */
+    .android {
+      left: 40%;
+      top: 84%;
+      width: 20%;
+      height: 7%;
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="container">
+
+  <img src="human_android.png" class="bg">
+
+  <a href="human.html" class="button human"></a>
+
+  <a href="android.html" class="button android"></a>
+
+</div>
+
+</body>
+</html>
+```
