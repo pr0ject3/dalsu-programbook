@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>거래 내역</title>
+
+<style>
+
+html, body {
+    margin: 0;
+    padding: 0;
+    background: black;
+    overflow: hidden;
+}
+
+.stage {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: black;
+    overflow: hidden;
+}
+
+.screen {
+    position: relative;
+    display: inline-block;
+    line-height: 0;
+    height: 100vh;
+}
+
+.bg {
+    height: 100vh;
+    width: auto;
+    display: block;
+}
+
+/* 테스트용 버튼 표시 */
+
+.button {
+    position: absolute;
+    background: red;
+    opacity: 0.5;
+    z-index: 10;
+}
+
+/* 뒤로가기 */
+
+.back {
+    left: 8%;
+    top: 4%;
+    width: 30%;
+    height: 8%;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="stage">
+    <div class="screen">
+
+        <img src="transaction_log.png?v=1" class="bg">
+
+        <a href="archive_main.html" class="button back"></a>
+
+    </div>
+</div>
+
+</body>
+</html>
