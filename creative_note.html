@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>창작노트</title>
+
+<style>
+
+html, body{
+    margin:0;
+    padding:0;
+    background:#000;
+    overflow:hidden;
+}
+
+.stage{
+    width:100vw;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:#000;
+}
+
+.screen{
+    position:relative;
+    height:100vh;
+    line-height:0;
+}
+
+.bg{
+    height:100vh;
+    width:auto;
+    display:block;
+}
+
+/* 테스트용 버튼 */
+.button{
+    position:absolute;
+    background:red;
+    opacity:0.45;
+    z-index:20;
+}
+
+/* 뒤로가기 */
+.back{
+    left:1.5%;
+    top:14%;
+    width:5.5%;
+    height:21%;
+}
+
+/* NOTE_001 */
+.note1{
+    left:12.5%;
+    top:31.5%;
+    width:34%;
+    height:18.5%;
+}
+
+/* NOTE_002 */
+.note2{
+    left:53%;
+    top:31.5%;
+    width:34%;
+    height:18.5%;
+}
+
+/* NOTE_003 */
+.note3{
+    left:12.5%;
+    top:55.5%;
+    width:34%;
+    height:18.5%;
+}
+
+/* NOTE_004 */
+.note4{
+    left:53%;
+    top:55.5%;
+    width:34%;
+    height:18.5%;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="stage">
+<div class="screen">
+
+<img src="creative_note.png?v=1" class="bg">
+
+<a href="archive_main.html?v=2" class="button back"></a>
+
+<a href="note_001.html?v=1" class="button note1"></a>
+<a href="note_002.html?v=1" class="button note2"></a>
+<a href="note_003.html?v=1" class="button note3"></a>
+<a href="note_004.html?v=1" class="button note4"></a>
+
+</div>
+</div>
+
+</body>
+</html>
