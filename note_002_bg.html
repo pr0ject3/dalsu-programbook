@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>NOTE_002</title>
+
+<style>
+
+html, body{
+    margin:0;
+    padding:0;
+    background:#000;
+    overflow:hidden;
+}
+
+.stage{
+    width:100vw;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:#000;
+}
+
+.screen{
+    position:relative;
+    height:100vh;
+    line-height:0;
+}
+
+.bg{
+    height:100vh;
+    width:auto;
+    display:block;
+}
+
+/* 본문 글 이미지 */
+.note-text{
+    position:absolute;
+    left:10%;
+    top:26%;
+    width:80%;
+    height:auto;
+    z-index:10;
+}
+
+/* 테스트용 버튼 */
+.button{
+    position:absolute;
+    background:red;
+    opacity:0.45;
+    z-index:20;
+}
+
+/* 뒤로가기 */
+.back{
+    left:1.5%;
+    top:10%;
+    width:5.5%;
+    height:22%;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="stage">
+<div class="screen">
+
+<img src="note_002_bg.png?v=1" class="bg">
+
+<img src="note_002_text.png?v=1" class="note-text">
+
+<a href="creative_note.html?v=2" class="button back"></a>
+
+</div>
+</div>
+
+</body>
+</html>
